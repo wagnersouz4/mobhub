@@ -1,0 +1,12 @@
+---
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  buildpack: sdk-for-nodejs
+  domain: mybluemix.net
+  name: mobhub
+  command: npm run server
+  env:
+    UI_ENV: DEV
+  disk_quota: 1024M
